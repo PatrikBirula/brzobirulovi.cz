@@ -1,0 +1,1378 @@
+//
+//Variables
+//
+
+//Fonts
+
+$Main-tittle-font: 'Kaushan Script', cursive;
+
+//
+//Fonts size
+//
+$font-size-1920: 1.8rem;
+$h1-size-1920: 4rem;
+
+$font-size-1200: 1rem;
+$h1-size-1200: 2rem;
+
+$font-size-mobile: 1.8vw;
+$h1-size-mobile: 3vw;
+
+//Colors
+
+
+
+//Body
+h1{
+    font-size: 4rem;
+    font-family: $Main-tittle-font;
+    letter-spacing: 0.4vw;   
+    text-align: center;
+}
+h2{
+    font-family: $Main-tittle-font;
+}
+p{
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+//Header
+
+//Settings for Main Screen
+.unscreen{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 70rem;
+    z-index: 5;
+}
+.bila{
+    width: 100%;
+}
+.nadpis{
+    width: 50%;
+    position: absolute;
+    top: -3%;
+    margin: {
+        top: 1%;
+        left: 25%;
+    };
+    h1{
+        font-size: 5em;
+    };
+}
+.nadpis h1:last-child{
+    margin-bottom: 0;
+}
+.pic1-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic1{
+    width: 33%;
+    margin: {
+        left: 15%;
+        top: 15%;
+    };
+    z-index: 3;
+}
+.pic2{
+    width: 30%;
+    margin: {
+        right: 15%;
+        top: 14%;
+    };
+    z-index: 4;
+}
+.spodkol1{
+    width: 5%;
+    position: absolute;
+    top: 0%;
+    left: 27.7%;
+    z-index: -80;
+}
+.vrchkol1{
+    width: 6%;;
+    position: absolute;
+    top: 0%;
+    left: 28.5%;
+    z-index: 15;
+}
+.spodkol2{
+    width: 5%;
+    //position: -webkit-sticky;
+    position: absolute;
+    top: 0%;
+    left: 65.52%;
+    z-index: -80;
+}
+.vrchkol2{
+    width: 5.8%;
+    //position: -webkit-sticky;
+    position: absolute;
+    top: 0%;   
+    left: 64%;
+    z-index: 17;
+}
+.rope{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0%;
+    z-index: 1;
+}
+.dotaznikodkaz{
+    cursor: pointer;
+    color: blue;
+}
+.dotaznikodkaz:hover {
+    text-decoration: underline;
+}
+.seznam{
+    width: 50%;
+    margin: 0 auto;
+    margin: {
+        top: 1%;
+    };
+}
+li{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: {
+        top: 0.5%;
+        bottom: 0.5%;
+    };
+}
+//Settings for Articles
+.firstarticle{
+    width: 95%;
+    margin: 0 auto;
+    p{
+        width: 50%;
+        margin: 0 auto;
+    }
+    margin: {
+        top: 5%;
+    };
+}
+.article{
+    width: 95%;
+    margin: 0 auto;
+    p{
+        width: 50%;
+        margin: 0 auto;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.programbutton{
+    background-color: green;
+    width: 22rem;
+    height: 5rem;
+    font-size: $font-size-1920;
+    padding: {
+        left: 2%;
+        top: 1%;
+        right: 2%;
+        bottom: 1%;
+    };
+    margin: {
+        top: 2%;
+    };
+    cursor: pointer;
+    border: 0;
+    border-radius: 1rem;
+}
+.programbutton:hover{
+    font-weight: bold;
+}
+#programbtn1{
+    margin: {
+        top: 4%;
+    };
+}
+.ctn0{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: {
+        top: 2%;
+    };
+}
+.ctn1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        width: 80%;
+    }
+}
+.map{
+    width: 50%;
+    height: 20vw;
+}
+
+
+//Settings for pop up windows
+.popwindows{
+    position: fixed; 
+    top: 7%;
+    left: 20%;
+    z-index: 100;
+    width: 60%;
+    background: gray;
+    height: 70rem;
+    margin: 0 auto;
+    text-align: justify;
+    ul{
+        width: 80%;
+        margin: {
+            left: 10%;
+        }
+        list-style: none;
+    }
+    li{
+        width: 100%;
+        margin: {
+            top: 2%;
+            bottom: 2%;
+        };
+    }
+}
+h2{
+    text-align: center;
+}
+.crosswrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: {
+        top: 1%;
+        right: 2%;
+    };
+}
+.cross{
+    width: 1%;
+    text-decoration: none; 
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+.halfopacity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foodpic{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: {
+        top: 3%;
+    };
+}
+.jidlo{
+    width: 30%;
+    text-align: center;
+    
+}
+//Formsettings
+.formwrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.airbnbform{
+    width: 100%;
+    margin: 0 auto;
+    p{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+.menuform{
+    width: 100%;
+    margin: 0 auto;
+    p{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+.airbnbformrow{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: {
+        top: 1%;
+        bottom: 1%;
+    };
+}
+.airbnbformarea{
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    margin-left: 0;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: {
+        top: 1%;
+        bottom: 1%;
+    };
+}
+
+.airbnbformsubmit{
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: {
+        top: 1%;
+        bottom: 1%;
+    };
+    padding: {
+        left: 2%;
+        top: 1%;
+        right: 2%;
+        bottom: 1%;
+    };
+}
+.airbnbformsubmit:hover {
+    background: green;
+    cursor: pointer;
+}
+#menu{
+    h1{
+        margin: {
+            bottom: 1%;
+        };
+    }
+}
+
+
+//Media queries
+@media screen and (max-width: 575.99px) { 
+.nadpis{
+    top: 0;
+    h1{     
+        font-size: 1.2rem;
+    }
+}
+.unscreen{ 
+    height: 10rem;
+    margin-top: 0%;
+}
+.pic1{
+    width: 40%;
+    margin: {
+        left: 5%;
+        top: 22%;
+    };
+}
+.pic2{
+    width: 35%;
+    margin: {
+        right: 15%;
+        top: 20%;
+    };
+}
+.spodkol1{
+    top: 4.1%;
+    left: 26.7%;
+}
+.vrchkol1{
+    top: 4.1%;
+    left: 27.5%;
+}
+.spodkol2{
+    top: 4.1%;
+    left: 68.52%;
+}
+.vrchkol2{
+    top: 4.1%;   
+    left: 67%;
+}
+.rope{
+    margin-top: 8%;
+}
+h1{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 0.5rem;
+}
+p{
+    font-size: 0.5rem;
+}
+.firstarticle{
+    width: 95%;
+    p{
+        width: 80%;
+    }
+    margin: {
+        top: 5%;
+    };
+}
+.article{
+    width: 95%;
+    margin: 0 auto;
+    p{
+        width: 80%;
+    }
+}
+.programbutton{
+    width: 6rem;
+    height: 1.5rem;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+.map{
+    width: 80%;
+    height: 40vw;
+}
+li{
+    width: 90%;
+    font-size: 0.5rem;
+    padding: {
+        left: 0%;
+    };
+}
+.seznam{
+    width: 80%;
+    margin: {
+        top: 1%;
+    };
+}
+.popwindows{
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    background: gray;
+    height: 30rem;
+    margin: 0 auto;
+    text-align: justify;
+    ul{
+        width: 80%;
+    }
+    li{
+        width: 100%;
+    }
+    h2{
+        padding: {
+            left: 1%;
+            right: 1%;
+        };
+    }
+}
+.crosswrapper{
+    padding: {
+        top: 1%;
+        right: 8%;
+    };
+}
+.cross{
+    width: 0.5%;
+    text-decoration: none; 
+}
+.jidlo{
+    img{
+        width: 90%;
+    }
+    
+}
+.airbnbformarea{
+    height: 3rem;
+}
+
+} //End of MQ   
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) { 
+    .nadpis{
+    top: 0;
+    h1{     
+        font-size: 2rem;
+    }
+}
+.unscreen{ 
+    height: 10rem;
+    margin-top: 0%;
+}
+.pic1{
+    width: 40%;
+    margin: {
+        left: 5%;
+        top: 23%;
+    };
+}
+.pic2{
+    width: 35%;
+    margin: {
+        right: 15%;
+        top: 20%;
+    };
+}
+.spodkol1{
+    top: 5%;
+    left: 26.7%;
+}
+.vrchkol1{
+    top: 5%;
+    left: 27.5%;
+}
+.spodkol2{
+    top: 5%;
+    left: 68.52%;
+}
+.vrchkol2{
+    top: 5%;   
+    left: 67%;
+}
+.rope{
+    margin-top: 8%;
+}
+h1{
+    font-size: 1.7rem;
+}
+h2{
+    font-size: 1rem;
+}
+p{
+    font-size: 1rem;
+}
+.firstarticle{
+    width: 95%;
+    p{
+        width: 80%;
+    }
+    margin: {
+        top: 5%;
+    };
+}
+.article{
+    width: 95%;
+    margin: 0 auto;
+    p{
+        width: 80%;
+    }
+}
+.programbutton{
+    width: 11rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.map{
+    width: 80%;
+    height: 40vw;
+}
+li{
+    width: 90%;
+    font-size: 1rem;
+    padding: {
+        left: 0%;
+    };
+}
+.seznam{
+    width: 80%;
+    margin: {
+        top: 1%;
+    };
+}
+.popwindows{
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    background: gray;
+    height: 50rem;
+    margin: 0 auto;
+    text-align: justify;
+    ul{
+        width: 80%;
+    }
+    li{
+        width: 100%;
+    }
+    h2{
+        padding: {
+            left: 1%;
+            right: 1%;
+        };
+    }
+}
+.crosswrapper{
+    padding: {
+        top: 1%;
+        right: 8%;
+    };
+}
+.cross{
+    width: 0.5%;
+    text-decoration: none; 
+}
+.jidlo{
+    img{
+        width: 90%;
+    }
+    
+}
+.airbnbformarea{
+    height: 3rem;
+}
+} //End of MQ  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+.nadpis{
+    top: 0;
+    h1{     
+        font-size: 2.5rem;
+    }
+}
+.unscreen{ 
+    height: 10rem;
+    margin-top: 0%;
+}
+.pic1{
+    width: 40%;
+    margin: {
+        left: 5%;
+        top: 23%;
+    };
+}
+.pic2{
+    width: 35%;
+    margin: {
+        right: 15%;
+        top: 18%;
+    };
+}
+.spodkol1{
+    top: 5.8%;
+    left: 26.7%;
+}
+.vrchkol1{
+    top: 5.8%;
+    left: 27.5%;
+}
+.spodkol2{
+    top: 5.5%;
+    left: 68.52%;
+}
+.vrchkol2{
+    top: 5.5%;   
+    left: 67%;
+}
+.rope{
+    margin-top: 8%;
+}
+h1{
+    font-size: 1.7rem;
+}
+h2{
+    font-size: 1rem;
+}
+p{
+    font-size: 1rem;
+}
+.firstarticle{
+    width: 95%;
+    p{
+        width: 80%;
+    }
+    margin: {
+        top: 5%;
+    };
+}
+.article{
+    width: 95%;
+    margin: 0 auto;
+    p{
+        width: 80%;
+    }
+}
+.programbutton{
+    width: 11rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.map{
+    width: 80%;
+    height: 40vw;
+}
+li{
+    width: 90%;
+    font-size: 1rem;
+    padding: {
+        left: 0%;
+    };
+}
+.seznam{
+    width: 80%;
+    margin: {
+        top: 1%;
+    };
+}
+}//End of MQ  
+// Medium devices (tablets, 992px and up)
+@media (min-width: 992px) { 
+.nadpis{
+    top: 0;
+    h1{     
+        font-size: 3rem;
+    }
+}
+.unscreen{ 
+    height: 10rem;
+    margin-top: 0%;
+}
+.pic1{
+    width: 40%;
+    margin: {
+        left: 5%;
+        top: 22%;
+    };
+}
+.pic2{
+    width: 35%;
+    margin: {
+        right: 15%;
+        top: 18%;
+    };
+}
+.spodkol1{
+    top: 7%;
+    left: 26.7%;
+}
+.vrchkol1{
+    top: 7%;
+    left: 27.5%;
+}
+.spodkol2{
+    top: 6%;
+    left: 68.52%;
+}
+.vrchkol2{
+    top: 6%;   
+    left: 67%;
+}
+.rope{
+    margin-top: 8%;
+}
+h1{
+    font-size: 2.2rem;
+}
+h2{
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1.2rem;
+}
+.firstarticle{
+    width: 95%;
+    p{
+        width: 80%;
+    }
+    margin: {
+        top: 5%;
+    };
+}
+.article{
+    width: 95%;
+    margin: 0 auto;
+    p{
+        width: 80%;
+    }
+}
+.programbutton{
+    width: 13rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.map{
+    width: 80%;
+    height: 40vw;
+}
+li{
+    width: 90%;
+    font-size: 1.2rem;
+    padding: {
+        left: 0%;
+    };
+}
+.seznam{
+    width: 80%;
+    margin: {
+        top: 1%;
+    };
+}
+}//End of MQ
+// Medium devices (tablets, 1200px and up)
+@media (min-width: 1200px) { 
+.nadpis{
+    top: 0;
+    h1{     
+        font-size: 3rem;
+    }
+}
+.unscreen{ 
+    height: 10rem;
+    margin-top: 0%;
+}
+.pic1{
+    width: 40%;
+    margin: {
+        left: 7%;
+        top: 15%;
+    };
+}
+.pic2{
+    width: 35%;
+    margin: {
+        right: 13%;
+        top: 12%;
+    };
+}
+.spodkol1{
+    top: 0.5%;
+    left: 26.7%;
+}
+.vrchkol1{
+    top: 0.5%;
+    left: 27.5%;
+}
+.spodkol2{
+    top: 1%;
+    left: 68.52%;
+}
+.vrchkol2{
+    top: 1.5%;   
+    left: 67%;
+}
+.rope{
+    margin-top: 1%;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+p{
+    font-size: 1.4rem;
+}
+.firstarticle{
+    width: 95%;
+    p{
+        width: 80%;
+    }
+    margin: {
+        top: 5%;
+    };
+}
+.article{
+    width: 95%;
+    margin: 0 auto;
+    p{
+        width: 80%;
+    }
+}
+.programbutton{
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+.map{
+    width: 80%;
+    height: 30vw;
+}
+li{
+    width: 90%;
+    font-size: 1.4rem;
+    padding: {
+        left: 0%;
+    };
+}
+.seznam{
+    width: 80%;
+    margin: {
+        top: 1%;
+    };
+}
+.popwindows{
+    top: 3%;
+    left: 10%;
+    width: 80%;
+    background: gray;
+    height: 35rem;
+    margin: 0 auto;
+    text-align: justify;
+    ul{
+        width: 80%;
+    }
+    li{
+        width: 100%;
+    }
+    h1{
+        margin-top: 0;
+    }
+}
+.crosswrapper{
+    padding: {
+        top: 1%;
+        right: 8%;
+    };
+}
+.cross{
+    width: 0.5%;
+    text-decoration: none; 
+}
+.jidlo{
+    img{
+        width: 70%;
+    }   
+}
+.foodpic{
+    margin-top: 0;
+}
+#menu{
+    h1{
+        font-size: 2rem;
+        margin-top: 0%;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+}
+.airbnbformarea{
+    height: 3rem;
+}
+#airbnbbtn{
+    padding: 0;
+}
+.menuform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .formwrapper{
+        width: 30%;
+    }
+}
+}//End of MQ
+// Medium (landscape tablets, HD laptops 1366px and up)
+@media (min-width: 1366px) { 
+.nadpis{
+    top: 0;
+    h1{     
+        font-size: 4rem;
+    }
+}
+.unscreen{ 
+    height: 10rem;
+    margin-top: 0%;
+}
+.pic1{
+    width: 35%;
+    margin: {
+        left: 10%;
+        top: 18%;
+    };
+}
+.pic2{
+    width: 30%;
+    margin: {
+        right: 15%;
+        top: 12%;
+    };
+}
+.spodkol1{
+    top: 6%;
+    left: 26.7%;
+}
+.vrchkol1{
+    top: 6%;
+    left: 27.5%;
+}
+.spodkol2{
+    top: 6.5%;
+    left: 68.52%;
+}
+.vrchkol2{
+    top: 6.5%;   
+    left: 67%;
+}
+.rope{
+    margin-top: 3%;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+p{
+    font-size: 1.4rem;
+}
+.firstarticle{
+    width: 95%;
+    p{
+        width: 80%;
+    }
+    margin: {
+        top: 5%;
+    };
+}
+.article{
+    width: 95%;
+    margin: 0 auto;
+    p{
+        width: 80%;
+    }
+}
+.programbutton{
+    width: 16rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+.map{
+    width: 80%;
+    height: 30vw;
+}
+li{
+    width: 90%;
+    font-size: 1.4rem;
+    padding: {
+        left: 0%;
+    };
+}
+.seznam{
+    width: 80%;
+    margin: {
+        top: 1%;
+    };
+}
+.popwindows{
+    height: 45rem;
+}
+.menuform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .formwrapper{
+        width: 30%;
+    }
+}
+#menu{
+    h1{
+        font-size: 2.5rem;
+        margin-top: 0%;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+.airbnbform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}//End of MQ
+// Large (FullHD 1600px and up)
+@media (min-width: 1800px) { 
+.nadpis{
+    width: 50%;
+    position: absolute;
+    top: -3%;
+    margin: {
+        top: 0%;
+        left: 25%;
+    };
+    h1{
+        font-size: 5em;
+    };
+}
+.unscreen{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: -30%; 
+    height: 1rem;
+    z-index: 5;
+}
+.pic1-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic1{
+    width: 35.5%;
+    margin: {
+        left: 15%;
+        top: 15%;
+    };
+    z-index: 3;
+}
+.pic2{
+    width: 31%;
+    margin: {
+        right: 15%;
+        top: 12%;
+    };
+    z-index: 4;
+}
+.spodkol1{
+    width: 5%;
+    position: absolute;
+    top: 0%;
+    left: 27.7%;
+    z-index: -80;
+}
+.vrchkol1{
+    width: 6%;;
+    position: absolute;
+    top: 0%;
+    left: 28.5%;
+    z-index: 15;
+}
+.spodkol2{
+    width: 5%;
+    //position: -webkit-sticky;
+    position: absolute;
+    top: 0%;
+    left: 65.52%;
+    z-index: -80;
+}
+.vrchkol2{
+    width: 5.8%;
+    //position: -webkit-sticky;
+    position: absolute;
+    top: 0%;   
+    left: 64%;
+    z-index: 17;
+}
+.rope{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0%;
+    z-index: 1;
+}
+.dotaznikodkaz{
+    cursor: pointer;
+    color: blue;
+}
+.seznam{
+    width: 50%;
+    margin: 0 auto;
+    margin: {
+        top: 1%;
+    };
+}
+li{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: {
+        top: 0.5%;
+        bottom: 0.5%;
+    };
+}
+.firstarticle{
+    width: 95%;
+    margin: 0 auto;
+    p{
+        width: 50%;
+        margin: 0 auto;
+    }
+    margin: {
+        top: 2%;
+    };
+}
+.article{
+    width: 95%;
+    margin: 0 auto;
+    p{
+        width: 50%;
+        margin: 0 auto;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.programbutton{
+    background-color: green;
+    width: 22rem;
+    height: 5rem;
+    font-size: $font-size-1920;
+    padding: {
+        left: 2%;
+        top: 1%;
+        right: 2%;
+        bottom: 1%;
+    };
+    margin: {
+        top: 2%;
+    };
+    cursor: pointer;
+    border: 0;
+    border-radius: 1rem;
+    font-weight: normal;
+}
+.programbutton:hover{
+    font-weight: bold;
+}
+h1{
+    font-size: 4rem;
+    font-family: $Main-tittle-font;
+    letter-spacing: 0.4vw;   
+    text-align: center;
+}
+h2{
+    font-family: $Main-tittle-font;
+}
+p{
+    font-size: 1.7rem;
+    text-align: justify;
+}
+.airbnbformarea{
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    margin-left: 0;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: {
+        top: 1%;
+        bottom: 1%;
+    };
+}
+.jidlo{
+    width: 30%;
+    text-align: center;
+    
+}
+#menu{
+    h1{
+        font-size: 3rem;
+        margin-top: 0%;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+.crosswrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: {
+        top: 1%;
+        right: 2%;
+    };
+}
+.cross{
+    width: 1%;
+    text-decoration: none; 
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+.popwindows{
+    top: 3%;
+    left: 20%;
+    width: 60%;
+    height: 55rem;
+    ul{
+        width: 80%;
+        margin: {
+            left: 10%;
+        }
+    }
+    li{
+        width: 100%;
+        margin: {
+            top: 2%;
+            bottom: 2%;
+        };
+    }
+    h1{
+        margin-top: 1%;
+    }
+}
+.foodpic{
+    margin: {
+        top: 1%;
+    };
+}
+.menuform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .formwrapper{
+        width: 50%;
+    }
+}
+}//End of MQ
+@media (min-width: 2200px) {
+.popwindows{  
+    height: 70rem;
+}
+.nadpis{
+    width: 50%;
+    position: absolute;
+    top: -3%;
+    margin: {
+        top: 1%;
+        left: 25%;
+    };
+    h1{
+        font-size: 6em;
+    };
+}
+h1{
+    font-size: 5rem;
+    font-family: $Main-tittle-font;
+    letter-spacing: 0.4vw;   
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 2rem;
+    text-align: justify;
+}
+.map{
+    width: 70%;
+    height: 20vw;
+}
+li{
+    font-size: 1.8rem;
+    text-align: justify;
+    padding: {
+        top: 0.5%;
+        bottom: 0.5%;
+    };
+}
+}//End of MQ
